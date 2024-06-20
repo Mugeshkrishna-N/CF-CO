@@ -1,0 +1,130 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+
+.background {
+    background: url('mysterious-golden-twisted-lines-black-gif-background_2757219.jpg!sw800') no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: brown;
+    color: white;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form-container {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field.name, .field.email {
+    width: 48%;
+}
+
+.form-control, .field input, .field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button-area {
+    text-align: right;
+}
+
+.btn-brown, .button-area button {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-brown:hover, .button-area button:hover {
+    background-color: #8b4513;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Background with Navbar and Carousel</title>
+    <link rel="stylesheet" href="sample.css">
+    <!-- Include Bootstrap CSS for Carousel -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="sample.html">Home</a></li>
+            <li class="nav-item"><a href="sampleabout.html">About</a></li>
+            <!-- <li class="nav-item"><a href="#">Services</a></li> -->
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="png-transparent-brown-coffee-logo-brown-coffee-logo.png" alt="Logo" class="navbar-logo">
+    </nav>
+    
+    <div class="container carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="coff1.webp" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="coff2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="coff3.webp" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="coff4.jpeg" alt="Fourth slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="list-container">
+        <img src="coff2.jpg" alt="Example Image" class="list-image">
+        <ul class="list-text">
+            <li>Cold brew coffee is usually made by steeping coffee in water for a number of hours at cold or ambient (room) temperature. This slow, low temp brew makes cold brew taste very different from hot brewing the same type of coffee beans</li>
+            <li>Discovered this kind of bevarage by the Native people of England in 1985.</li>
+            <li>In terms of flavor, cold brew is generally characterized as smooth, low-acid, and heavier than its hot brewed counterparts.</li>
+            <li><button class="purchase-btn">Purchase</button></li>
+        </ul>
+        
+    </div>
+    <div class="list-container">
+        <img src="coff1.webp" alt="Example Image" class="list-image">
+        <ul class="list-text">
+            <li>Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It's made from the same beans as coffee but is stronger, thicker, and higher in caffeine.</li>
+            <li>A Drink orginated from Italy in the Early 1960's.</li>
+            <li>Espresso in particular should be more smooth and sweet than bitter. It's still a rich, strong flavor, but it should be pleasant to most palates.</li>
+            <li><button class="purchase-btn">Purchase</button></li>
+        </ul>
+       
+    </div>
+    <div class="list-container">
+        <img src="coff3.webp" alt="Example Image" class="list-image">
+        <ul class="list-text">
+            <li>A latte or caffè latte is a milk coffee that is a made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top.</li>
+            <li>It's a European smooth refreshment drink.</li>
+            <li>The steamed milk adds a hint of a caramelized sugar sweetness, and the 1cm of microfoam on the surface of the drink is smooth and creamy.</li>
+            <li><button class="purchase-btn">Purchase</button></li>
+        </ul>
+       
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS for Carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

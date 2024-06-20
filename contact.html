@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coffee & Co</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="sample.html">Home</a></li>
+            <li class="nav-item"><a href="sampleabout.html">About</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="png-transparent-brown-coffee-logo-brown-coffee-logo.png" alt="Logo" class="navbar-logo">
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="a95974b2-8215-4ed2-bfa3-7b490752f9cd.avif" alt="Contact Us Image" class="left-image">
+        </div>
+        <div class="contact-form-container">
+            <div class="text">Message me</div>
+            <form action="#">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" placeholder="Name" id="name" required>
+                    </div>
+                    <div class="field email">
+                        <input type="email" placeholder="Email" id="email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Subject" id="sub" required>
+                </div>
+                <div class="field textarea">
+                    <textarea cols="30" rows="10" placeholder="Message.." id="msg" required></textarea>
+                </div>
+                <div class="button-area">
+                    <button type="button" onclick="sendEmail()">Send message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Email Sending Script -->
+    <script>
+        function sendEmail() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var mesg = document.getElementById('msg').value;
+            var subject = document.getElementById('sub').value;
+            var body = 'Name: ' + name + '\nEmail: ' + email + '\nSubject: ' + subject + '\nMessage: ' + mesg;
+
+            // Use 'mailto' to open the default email client with pre-filled fields
+            window.location.href = 'mailto:mugeshkrishna585@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        }
+    </script>
+</body>
+</html>
